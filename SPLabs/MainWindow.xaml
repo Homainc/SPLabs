@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPLabs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="100" Width="300"
+        ResizeMode="NoResize">
+    <StackPanel x:Name="mainStack">
+        <Menu>
+            <MenuItem Header="Menu">
+                <MenuItem Header="Start" Click="Start"></MenuItem>
+                <MenuItem Header="Stop" Click="Stop"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </StackPanel>
 </Window>
