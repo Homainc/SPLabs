@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLab7", "SPLab7\SPLab7.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLab8", "SPLab8\SPLab8.csproj", "{9CAF3F9F-1B70-4665-94C0-6485B445522B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPLab9", "SPLab9\SPLab9.csproj", "{C0295E55-F673-4D28-B27D-F65875AFF3EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9CAF3F9F-1B70-4665-94C0-6485B445522B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CAF3F9F-1B70-4665-94C0-6485B445522B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CAF3F9F-1B70-4665-94C0-6485B445522B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0295E55-F673-4D28-B27D-F65875AFF3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0295E55-F673-4D28-B27D-F65875AFF3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0295E55-F673-4D28-B27D-F65875AFF3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0295E55-F673-4D28-B27D-F65875AFF3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

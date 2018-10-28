@@ -1,0 +1,19 @@
+﻿<Window x:Class="SPLab9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SPLab9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="420" Width="400"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ImageBrush x:Key="anim0" ImageSource="/anim/anim_0.bmp"/>
+            <ImageBrush x:Key="anim1" ImageSource="/anim/anim_01.bmp"/>
+            <ImageBrush x:Key="anim2" ImageSource="/anim/anim_1.bmp"/>
+            <ImageBrush x:Key="anim3" ImageSource="/anim/anim_2.bmp"/>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Canvas x:Name="mainCanvas" MouseDown="mouseClick" Height="400" Width="400" Background="White"/>
+</Window>
