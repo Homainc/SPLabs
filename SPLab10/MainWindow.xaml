@@ -1,0 +1,28 @@
+﻿<Window x:Class="SPLab10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SPLab10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300"
+        ResizeMode="NoResize">
+    <StackPanel>
+        <GroupBox Header="Color">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="checkRed" Content="Red" Margin="10" IsChecked="True"/>
+                <RadioButton x:Name="checkGreen" Content="Green" Margin="10"/>
+                <RadioButton x:Name="checkBlue" Content="Blue" Margin="10"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Figure">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="checkSquare" Content="Square" Margin="10" IsChecked="True"/>
+                <RadioButton x:Name="checkCircle" Content="Circle" Margin="10"/>
+                <RadioButton x:Name="checkRhomb" Content="Rhomb" Margin="10"/>
+                <RadioButton x:Name="checkStar" Content="Star" Margin="10"/>
+            </StackPanel>
+        </GroupBox>
+        <CheckBox x:Name="checkDraw" Content="Draw" Margin="20 10 0 0"/>
+    </StackPanel>
+</Window>
