@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:SPLab10"
         mc:Ignorable="d"
         Title="DrawWin" Height="300" Width="300"
-        ResizeMode="NoResize" GotFocus="Focus" FocusManager.IsFocusScope="True">
-    <Canvas>
+        ResizeMode="NoResize" Activated="Focus">
+    <Canvas x:Name="cnv">
         
     </Canvas>
 </Window>

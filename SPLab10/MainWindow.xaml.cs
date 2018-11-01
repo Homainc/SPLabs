@@ -15,16 +15,23 @@ using System.Windows.Shapes;
 
 namespace SPLab10
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private DrawWin win;
         public MainWindow()
         {
             InitializeComponent();
-            DrawWin win = new DrawWin(this);
+            this.win = new DrawWin(this);
             win.Show();
         }
+
+        private void checkRed_Checked(object sender, RoutedEventArgs e) => win?.SetColor("red");
+        private void checkGreen_Checked(object sender, RoutedEventArgs e) => win?.SetColor("green");
+        private void checkBlue_Checked(object sender, RoutedEventArgs e) => win?.SetColor("blue");
+
+        private void checkSquare_Checked(object sender, RoutedEventArgs e) => win?.SetFigure("square");
+        private void checkCircle_Checked(object sender, RoutedEventArgs e) => win?.SetFigure("circle");
+        private void checkRhomb_Checked(object sender, RoutedEventArgs e) => win?.SetFigure("rhomb");
+        private void checkStar_Checked(object sender, RoutedEventArgs e) => win?.SetFigure("star");
     }
 }

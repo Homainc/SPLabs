@@ -10,17 +10,17 @@
     <StackPanel>
         <GroupBox Header="Color">
             <StackPanel Orientation="Horizontal">
-                <RadioButton x:Name="checkRed" Content="Red" Margin="10" IsChecked="True"/>
-                <RadioButton x:Name="checkGreen" Content="Green" Margin="10"/>
-                <RadioButton x:Name="checkBlue" Content="Blue" Margin="10"/>
+                <RadioButton x:Name="checkRed" Content="Red" Margin="10" IsChecked="True" Checked="checkRed_Checked"/>
+                <RadioButton x:Name="checkGreen" Content="Green" Margin="10" Checked="checkGreen_Checked"/>
+                <RadioButton x:Name="checkBlue" Content="Blue" Margin="10" Checked="checkBlue_Checked"/>
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Figure">
             <StackPanel Orientation="Horizontal">
-                <RadioButton x:Name="checkSquare" Content="Square" Margin="10" IsChecked="True"/>
-                <RadioButton x:Name="checkCircle" Content="Circle" Margin="10"/>
-                <RadioButton x:Name="checkRhomb" Content="Rhomb" Margin="10"/>
-                <RadioButton x:Name="checkStar" Content="Star" Margin="10"/>
+                <RadioButton x:Name="checkSquare" Content="Square" Margin="10" IsChecked="True" Checked="checkSquare_Checked"/>
+                <RadioButton x:Name="checkCircle" Content="Circle" Margin="10" Checked="checkCircle_Checked"/>
+                <RadioButton x:Name="checkRhomb" Content="Rhomb" Margin="10" Checked="checkRhomb_Checked"/>
+                <RadioButton x:Name="checkStar" Content="Star" Margin="10" Checked="checkStar_Checked"/>
             </StackPanel>
         </GroupBox>
         <CheckBox x:Name="checkDraw" Content="Draw" Margin="20 10 0 0"/>
