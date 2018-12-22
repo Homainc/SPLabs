@@ -43,13 +43,22 @@ namespace SPLab14_1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             results.Clear();
-            RegistryKey cu = Registry.CurrentUser;
             skey = txtS.Text;
-            search(cu);
-            
+            RegistryKey cu = Registry.CurrentUser;
+            //search(cu, "HKEY_CURRENT_USER/");
+            cu = Registry.ClassesRoot;
+            //search(cu, "HKEY_CLASSES_ROOT/");
+            cu = Registry.CurrentConfig;
+            //search(cu, "HKEY_CURRENT_CONFIG/");
+            cu = Registry.LocalMachine;
+            search(cu, "HKEY_LOCAL_MACHINE/");
+            //cu = Registry.PerformanceData;
+            //search(cu, "HKEY_PERFORMANCE_DATA/");
+            pathText.Text = $"Results: {results.Count}";
         }
         private RegResult search(RegistryKey key, string path = "")
         {
+            pathText.Text = path;
             foreach (string k in key.GetValueNames())
             {
                 if (k == skey)
